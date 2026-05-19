@@ -11,7 +11,159 @@ import '../styles/global.css';
 		<meta name="generator" content={Astro.generator} />
 		<title>earthtomemphis</title>
 	</head>
-	<body>
-		<h1>earthtomemphis</h1>
+	<body class="px-4 md:px-8 lg:px-32 2xl:px-64">
+		<header
+			class="w-full h-16 md:h-20 flex items-center justify-between mb-8"
+		>
+			{/* LOGO */}
+			<a
+				href="/"
+				class="flex items-center gap-4 text-2xl font-bold"
+			>
+				<span class="text-3xl">earthtomemphis</span>
+			</a>
+			<nav
+				class="hidden md:flex items-center gap-6 xl:gap-12 font-medium"
+			>
+				<a href="/">Blog</a>
+				<a href="/">Shop</a>
+				<a href="/"
+					><button
+						class="py-2 px-4 rounded-3xl bg-blue-800 text-white shadow-xl"
+					>
+						Login 👋
+					</button></a
+				>
+				<!-- cart icon -->
+				<a href="/">
+					<i class="fa-regular fa-cart-shopping"></i></a
+				>
+			</nav>
+		</header>
+		<main>
+			<h2 class="text-2xl font-bold tracking-tight text-gray-900">
+				Featured Products
+			</h2>
+
+			<div
+				class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8"
+			>
+				<div class="group relative">
+					<img
+						src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg"
+						alt="Front of men's Basic Tee in black."
+						class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80"
+					/>
+					<div class="mt-4 flex justify-between">
+						<div>
+							<h3 class="text-sm text-gray-700">
+								<a href="#">
+									<span
+										aria-hidden="true"
+										class="absolute inset-0"
+									></span>
+									Basic Tee
+								</a>
+							</h3>
+							<p class="mt-1 text-sm text-gray-500">
+								Black
+							</p>
+						</div>
+						<p
+							class="text-sm font-medium text-gray-900"
+						>
+							$35
+						</p>
+					</div>
+				</div>
+				<div class="group relative">
+					<img
+						src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-02.jpg"
+						alt="Front of men's Basic Tee in white."
+						class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80"
+					/>
+					<div class="mt-4 flex justify-between">
+						<div>
+							<h3 class="text-sm text-gray-700">
+								<a href="#">
+									<span
+										aria-hidden="true"
+										class="absolute inset-0"
+									></span>
+									Basic Tee
+								</a>
+							</h3>
+							<p class="mt-1 text-sm text-gray-500">
+								Aspen White
+							</p>
+						</div>
+						<p
+							class="text-sm font-medium text-gray-900"
+						>
+							$35
+						</p>
+					</div>
+				</div>
+				<div class="group relative">
+					<img
+						src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-03.jpg"
+						alt="Front of men's Basic Tee in dark gray."
+						class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80"
+					/>
+					<div class="mt-4 flex justify-between">
+						<div>
+							<h3 class="text-sm text-gray-700">
+								<a href="#">
+									<span
+										aria-hidden="true"
+										class="absolute inset-0"
+									></span>
+									Basic Tee
+								</a>
+							</h3>
+							<p class="mt-1 text-sm text-gray-500">
+								Charcoal
+							</p>
+						</div>
+						<p
+							class="text-sm font-medium text-gray-900"
+						>
+							$35
+						</p>
+					</div>
+				</div>
+				<div class="group relative">
+					<img
+						src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-04.jpg"
+						alt="Front of men's Artwork Tee in peach with white and brown dots forming an isometric cube."
+						class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80"
+					/>
+					<div class="mt-4 flex justify-between">
+						<div>
+							<h3 class="text-sm text-gray-700">
+								<a href="#">
+									<span
+										aria-hidden="true"
+										class="absolute inset-0"
+									></span>
+									Artwork Tee
+								</a>
+							</h3>
+							<p class="mt-1 text-sm text-gray-500">
+								Iso Dots
+							</p>
+						</div>
+						<p
+							class="text-sm font-medium text-gray-900"
+						>
+							$35
+						</p>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<p>Copyright earthtomemphis All Rights Reserved</p>
+		</footer>
 	</body>
 </html>
