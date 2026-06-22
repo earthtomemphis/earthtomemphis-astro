@@ -1,0 +1,235 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+	<!-- Hero -->
+	<section
+		class="max-w-6xl mx-auto px-6 md:px-10 py-16 grid md:grid-cols-2 gap-14 items-center"
+	>
+		<div>
+			<p class="font-mono text-xs text-stone tracking-widest mb-5">
+				ABOUT ME
+			</p>
+			<h1 class="font-serif text-4xl md:text-5xl leading-[1.1]">
+				I left a desk job in 2021. I haven't regretted it once.
+			</h1>
+			<p class="mt-6 text-espresso/65 leading-relaxed text-lg">
+				Hi — I'm Memphis. I make travel videos and write a blog
+				for people who want to actually go places, not just
+				watch other people go places.
+			</p>
+			<p class="mt-5 text-espresso/65 leading-relaxed">
+				earthtomemphis started as a channel name that stuck. The
+				idea was simple: document what it actually costs and
+				feels like to travel solo on a tight budget, in places
+				that aren't on every "top 10" list. No sponsored
+				resorts, no business class, no pretending anything is
+				easier than it is.
+			</p>
+			<div class="flex gap-4 mt-8">
+				<a
+					href="https://youtube.com/@earthtomemphis"
+					target="_blank"
+					class="flex items-center gap-2 bg-espresso text-cream text-sm font-semibold px-5 py-3 hover:bg-camel transition-colors"
+				>
+					<svg
+						class="w-4 h-4"
+						fill="currentColor"
+						viewBox="0 0 24 24"
+						><path
+							d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8ZM9.75 15.5v-7l6.25 3.5-6.25 3.5Z"
+						></path></svg
+					>
+					Watch on YouTube
+				</a>
+				<a
+					href="journal.html"
+					class="border border-espresso text-espresso text-sm font-semibold px-5 py-3 hover:border-camel hover:text-camel transition-colors"
+				>
+					Read the blog
+				</a>
+			</div>
+		</div>
+		<div class="relative">
+			<img
+				src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=800&q=80"
+				alt="Traveler with camera looking out over mountains"
+				class="w-full h-120 object-cover object-center"
+			/>
+			<div
+				class="absolute bottom-0 left-0 right-0 bg-linear-to-t from-espresso/60 to-transparent p-6"
+			>
+				<p class="font-mono text-xs text-stone/80">
+					27.7°N · 85.3°E — KATHMANDU, 2024
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Stats -->
+	<section class="bg-espresso text-cream">
+		<div
+			class="max-w-6xl mx-auto px-6 md:px-10 py-14 grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
+		>
+			<div>
+				<p class="font-serif text-4xl text-camel">34</p>
+				<p
+					class="font-mono text-xs text-stone mt-2 tracking-widest"
+				>
+					COUNTRIES
+				</p>
+			</div>
+			<div>
+				<p class="font-serif text-4xl text-camel">5</p>
+				<p
+					class="font-mono text-xs text-stone mt-2 tracking-widest"
+				>
+					YEARS ON THE ROAD
+				</p>
+			</div>
+			<div>
+				<p class="font-serif text-4xl text-camel">95+</p>
+				<p
+					class="font-mono text-xs text-stone mt-2 tracking-widest"
+				>
+					BLOG POSTS
+				</p>
+			</div>
+			<div>
+				<p class="font-serif text-4xl text-camel">$18/day</p>
+				<p
+					class="font-mono text-xs text-stone mt-2 tracking-widest"
+				>
+					AVERAGE DAILY SPEND
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Philosophy section -->
+	<section class="max-w-3xl mx-auto px-6 md:px-10 py-16">
+		<p class="font-mono text-xs text-stone tracking-widest mb-6">
+			HOW I TRAVEL
+		</p>
+		<div class="space-y-10">
+			<div class="border-l-2 border-camel pl-6">
+				<h3 class="font-serif text-xl mb-2">
+					Real budgets, real numbers
+				</h3>
+				<p class="text-espresso/65 leading-relaxed">
+					I publish my actual spend for every trip. Not an
+					estimate, not a best case — the real total,
+					including the bad days when I overpaid for
+					something stupid.
+				</p>
+			</div>
+			<div class="border-l-2 border-sage pl-6">
+				<h3 class="font-serif text-xl mb-2">
+					Places that aren't on the poster
+				</h3>
+				<p class="text-espresso/65 leading-relaxed">
+					I'm interested in the second town over from the
+					famous one. The market that closes before tourists
+					wake up. The route nobody films because the road
+					is rough.
+				</p>
+			</div>
+			<div class="border-l-2 border-camel pl-6">
+				<h3 class="font-serif text-xl mb-2">
+					Honest about the hard parts
+				</h3>
+				<p class="text-espresso/65 leading-relaxed">
+					Solo travel is great. It's also lonely, confusing,
+					exhausting, and sometimes goes badly. I write
+					about all of it, not just the lookout points.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Latest YT -->
+	<section class="bg-cream border-t border-stone/30">
+		<div class="max-w-6xl mx-auto px-6 md:px-10 py-16">
+			<div class="flex items-end justify-between mb-10">
+				<div>
+					<p
+						class="font-mono text-xs text-stone tracking-widest mb-2"
+					>
+						FROM THE CHANNEL
+					</p>
+					<h2 class="font-serif text-2xl">Latest videos</h2>
+				</div>
+				<a
+					href="https://youtube.com/@earthtomemphis"
+					target="_blank"
+					class="text-sm text-stone hover:text-camel transition-colors"
+					>See all →</a
+				>
+			</div>
+			<div class="grid md:grid-cols-2 gap-8">
+				<div>
+					<div
+						style="aspect-ratio:16/9"
+						class="w-full mb-4"
+					>
+						<iframe
+							class="w-full h-full"
+							src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+							title="Latest video"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+					</div>
+					<p class="font-mono text-xs text-camel mb-1">
+						THAILAND
+					</p>
+					<h3 class="font-serif text-xl">
+						$25/day in Chiang Mai — what nobody tells
+						you
+					</h3>
+				</div>
+				<div>
+					<div
+						style="aspect-ratio:16/9"
+						class="w-full mb-4"
+					>
+						<iframe
+							class="w-full h-full"
+							src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+							title="Previous video"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+					</div>
+					<p class="font-mono text-xs text-sage mb-1">
+						NEPAL
+					</p>
+					<h3 class="font-serif text-xl">
+						Solo trekking the Annapurna circuit on a
+						budget
+					</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact -->
+	<!-- <section class="max-w-3xl mx-auto px-6 md:px-10 py-16 text-center">
+		<p class="font-mono text-xs text-stone tracking-widest mb-4">
+			GET IN TOUCH
+		</p>
+		<h2 class="font-serif text-3xl mb-5">Want to collaborate?</h2>
+		<p class="text-espresso/65 leading-relaxed max-w-md mx-auto">
+			I'm open to genuine brand partnerships that make sense for a
+			budget travel audience. No resort stays, no "gifted" content I
+			can't be honest about.
+		</p>
+		<a
+			href="mailto:hello@earthtomemphis.com"
+			class="inline-block mt-8 bg-espresso text-cream text-sm font-semibold px-7 py-3.5 hover:bg-camel transition-colors"
+		>
+			hello@earthtomemphis.com
+		</a>
+	</section> -->
+</BaseLayout>
