@@ -1,169 +1,437 @@
 ---
-import '../styles/global.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>earthtomemphis</title>
-	</head>
-	<body class="px-4 md:px-8 lg:px-32 2xl:px-64">
-		<header
-			class="w-full h-16 md:h-20 flex items-center justify-between mb-8"
+<BaseLayout>
+	<!-- ── Hero ── -->
+	<section
+		class="hero-img relative h-[85vh] min-h-[560px] flex flex-col justify-end"
+	>
+		<div
+			class="absolute inset-0 bg-gradient-to-t from-espresso/80 via-espresso/20 to-transparent"
 		>
-			{/* LOGO */}
+		</div>
+		<div class="relative max-w-6xl mx-auto px-6 md:px-10 pb-16 w-full">
+			<p
+				class="font-mono text-xs text-stone/80 tracking-widest mb-4"
+			>
+				27.9°N · 86.9°E — KHUMBU VALLEY
+			</p>
+			<h1
+				class="font-serif text-4xl md:text-6xl text-cream leading-[1.1] max-w-2xl"
+			>
+				The world is<br /><em>bigger</em> than your comfort zone.
+			</h1>
+			<p
+				class="mt-5 text-cream/70 max-w-md text-base leading-relaxed"
+			>
+				Solo travels, honest budget guides, and the hidden
+				places nobody's making content about — yet.
+			</p>
 			<a
-				href="/"
-				class="flex items-center gap-4 text-2xl font-bold"
+				href="journal.html"
+				class="inline-block mt-8 border border-cream/60 text-cream text-sm px-6 py-3 hover:bg-cream hover:text-espresso transition-colors"
 			>
-				<span class="text-3xl">earthtomemphis</span>
+				Read the journal →
 			</a>
-			<nav
-				class="hidden md:flex items-center gap-6 xl:gap-12 font-medium"
-			>
-				<a href="/">Blog</a>
-				<a href="/">Shop</a>
-				<a href="/"
-					><button
-						class="py-2 px-4 rounded-3xl bg-blue-800 text-white shadow-xl"
-					>
-						Login 👋
-					</button></a
-				>
-				<!-- cart icon -->
-				<a href="/">
-					<i class="fa-regular fa-cart-shopping"></i></a
-				>
-			</nav>
-		</header>
-		<main>
-			<h2 class="text-2xl font-bold tracking-tight text-gray-900">
-				Featured Products
-			</h2>
+		</div>
+	</section>
 
+	<!-- ── YouTube section ── -->
+	<section class="bg-espresso text-cream">
+		<div class="max-w-6xl mx-auto px-6 md:px-10 py-16">
 			<div
-				class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8"
+				class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10"
 			>
-				<div class="group relative">
-					<img
-						src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg"
-						alt="Front of men's Basic Tee in black."
-						class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80"
-					/>
-					<div class="mt-4 flex justify-between">
-						<div>
-							<h3 class="text-sm text-gray-700">
-								<a href="#">
-									<span
-										aria-hidden="true"
-										class="absolute inset-0"
-									></span>
-									Basic Tee
-								</a>
-							</h3>
-							<p class="mt-1 text-sm text-gray-500">
-								Black
-							</p>
-						</div>
+				<div>
+					<p
+						class="font-mono text-xs text-stone tracking-widest mb-2"
+					>
+						LATEST FROM THE CHANNEL
+					</p>
+					<h2 class="font-serif text-3xl">
+						Watch on YouTube
+					</h2>
+				</div>
+				<a
+					href="https://youtube.com/@earthtomemphis"
+					target="_blank"
+					class="text-sm text-stone hover:text-camel transition-colors self-start sm:self-auto"
+				>
+					See all videos →
+				</a>
+			</div>
+
+			<!-- 3 video embeds -->
+			<div class="grid md:grid-cols-3 gap-6">
+				<div class="group">
+					<div class="yt-iframe w-full overflow-hidden">
+						<!-- Replace src with your real video IDs: https://www.youtube.com/embed/VIDEO_ID -->
+						<iframe
+							class="w-full h-full"
+							src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+							title="earthtomemphis video 1"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+					</div>
+					<div class="mt-4">
 						<p
-							class="text-sm font-medium text-gray-900"
+							class="font-mono text-xs text-stone tracking-widest mb-1"
 						>
-							$35
+							THAILAND · 14 MIN
 						</p>
+						<h3
+							class="font-serif text-lg leading-snug text-cream group-hover:text-camel transition-colors"
+						>
+							$25/day in Chiang Mai — what nobody
+							tells you
+						</h3>
 					</div>
 				</div>
-				<div class="group relative">
-					<img
-						src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-02.jpg"
-						alt="Front of men's Basic Tee in white."
-						class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80"
-					/>
-					<div class="mt-4 flex justify-between">
-						<div>
-							<h3 class="text-sm text-gray-700">
-								<a href="#">
-									<span
-										aria-hidden="true"
-										class="absolute inset-0"
-									></span>
-									Basic Tee
-								</a>
-							</h3>
-							<p class="mt-1 text-sm text-gray-500">
-								Aspen White
-							</p>
-						</div>
+
+				<div class="group">
+					<div class="yt-iframe w-full overflow-hidden">
+						<iframe
+							class="w-full h-full"
+							src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+							title="earthtomemphis video 2"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+					</div>
+					<div class="mt-4">
 						<p
-							class="text-sm font-medium text-gray-900"
+							class="font-mono text-xs text-stone tracking-widest mb-1"
 						>
-							$35
+							NEPAL · 22 MIN
 						</p>
+						<h3
+							class="font-serif text-lg leading-snug text-cream group-hover:text-camel transition-colors"
+						>
+							Solo trekking the Annapurna circuit on
+							a budget
+						</h3>
 					</div>
 				</div>
-				<div class="group relative">
-					<img
-						src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-03.jpg"
-						alt="Front of men's Basic Tee in dark gray."
-						class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80"
-					/>
-					<div class="mt-4 flex justify-between">
-						<div>
-							<h3 class="text-sm text-gray-700">
-								<a href="#">
-									<span
-										aria-hidden="true"
-										class="absolute inset-0"
-									></span>
-									Basic Tee
-								</a>
-							</h3>
-							<p class="mt-1 text-sm text-gray-500">
-								Charcoal
-							</p>
-						</div>
-						<p
-							class="text-sm font-medium text-gray-900"
-						>
-							$35
-						</p>
+
+				<div class="group">
+					<div class="yt-iframe w-full overflow-hidden">
+						<iframe
+							class="w-full h-full"
+							src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+							title="earthtomemphis video 3"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
 					</div>
-				</div>
-				<div class="group relative">
-					<img
-						src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-04.jpg"
-						alt="Front of men's Artwork Tee in peach with white and brown dots forming an isometric cube."
-						class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80"
-					/>
-					<div class="mt-4 flex justify-between">
-						<div>
-							<h3 class="text-sm text-gray-700">
-								<a href="#">
-									<span
-										aria-hidden="true"
-										class="absolute inset-0"
-									></span>
-									Artwork Tee
-								</a>
-							</h3>
-							<p class="mt-1 text-sm text-gray-500">
-								Iso Dots
-							</p>
-						</div>
+					<div class="mt-4">
 						<p
-							class="text-sm font-medium text-gray-900"
+							class="font-mono text-xs text-stone tracking-widest mb-1"
 						>
-							$35
+							GEORGIA · 18 MIN
 						</p>
+						<h3
+							class="font-serif text-lg leading-snug text-cream group-hover:text-camel transition-colors"
+						>
+							The cheapest country in Europe you've
+							never heard of
+						</h3>
 					</div>
 				</div>
 			</div>
-		</main>
-		<footer>
-			<p>Copyright earthtomemphis All Rights Reserved</p>
-		</footer>
-	</body>
-</html>
+		</div>
+	</section>
+
+	<!-- ── Featured post ── -->
+	<section
+		class="max-w-6xl mx-auto px-6 md:px-10 py-16 border-b border-stone/30"
+	>
+		<p class="font-mono text-xs text-stone tracking-widest mb-8">
+			FEATURED POST
+		</p>
+		<div class="grid md:grid-cols-2 gap-10 items-center">
+			<div class="overflow-hidden">
+				<img
+					src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=900&q=80"
+					alt="Street market at night in Southeast Asia"
+					class="w-full h-80 object-cover hover:scale-[1.03] transition-transform duration-500"
+				/>
+			</div>
+			<div>
+				<div class="flex items-center gap-3 mb-4">
+					<span
+						class="text-xs font-semibold text-sage border border-sage px-2.5 py-1 uppercase tracking-wide"
+						>Food & Culture</span
+					>
+					<span class="font-mono text-xs text-stone"
+						>Jun 14, 2026</span
+					>
+				</div>
+				<h2
+					class="font-serif text-3xl md:text-4xl leading-snug"
+				>
+					I ate at 40 street food stalls in Vietnam. Here's
+					the honest ranking.
+				</h2>
+				<p class="mt-5 text-espresso/65 leading-relaxed">
+					From a plastic-stool pho spot in Hanoi's old
+					quarter to a banh mi cart that costs less than a
+					dollar — a real eater's guide with no affiliate
+					links and no sponsored meals.
+				</p>
+				<div class="flex items-center justify-between mt-8">
+					<p class="font-mono text-xs text-stone">
+						21.0°N · 105.8°E — HANOI
+					</p>
+					<a
+						href="article.html"
+						class="text-sm font-semibold text-camel hover:text-sage transition-colors"
+						>Read more →</a
+					>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ── Recent posts ── -->
+	<section class="max-w-6xl mx-auto px-6 md:px-10 py-16">
+		<div class="flex items-baseline justify-between mb-10">
+			<h2 class="font-serif text-2xl">From the Journal</h2>
+			<a
+				href="journal.html"
+				class="text-sm text-stone hover:text-camel transition-colors"
+				>All posts →</a
+			>
+		</div>
+
+		<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+			<article class="group">
+				<div class="overflow-hidden">
+					<img
+						src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=700&q=80"
+						alt="Empty beach at sunrise"
+						class="w-full h-52 object-cover group-hover:scale-[1.04] transition-transform duration-500"
+					/>
+				</div>
+				<div class="mt-5">
+					<div class="flex items-center gap-3 mb-3">
+						<span
+							class="font-mono text-xs text-camel uppercase tracking-wide"
+							>Budget Tips</span
+						>
+						<span class="font-mono text-xs text-stone"
+							>8 min read</span
+						>
+					</div>
+					<h3 class="font-serif text-xl leading-snug">
+						<a
+							href="article.html"
+							class="hover:text-camel transition-colors"
+							>How I travel full-time for under
+							$1,200 a month</a
+						>
+					</h3>
+					<p
+						class="mt-3 text-sm text-espresso/60 leading-relaxed"
+					>
+						The actual numbers, not the fantasy version.
+						Accommodation, food, transport — all of it.
+					</p>
+				</div>
+			</article>
+
+			<article class="group">
+				<div class="overflow-hidden">
+					<img
+						src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=700&q=80"
+						alt="Ancient temple at dawn"
+						class="w-full h-52 object-cover group-hover:scale-[1.04] transition-transform duration-500"
+					/>
+				</div>
+				<div class="mt-5">
+					<div class="flex items-center gap-3 mb-3">
+						<span
+							class="font-mono text-xs text-sage uppercase tracking-wide"
+							>Off the Path</span
+						>
+						<span class="font-mono text-xs text-stone"
+							>12 min read</span
+						>
+					</div>
+					<h3 class="font-serif text-xl leading-snug">
+						<a
+							href="article.html"
+							class="hover:text-camel transition-colors"
+							>Hampi before the crowds: what I saw
+							at 5am</a
+						>
+					</h3>
+					<p
+						class="mt-3 text-sm text-espresso/60 leading-relaxed"
+					>
+						India's most surreal landscape, with a
+						fraction of the visitors — if you know when
+						to show up.
+					</p>
+				</div>
+			</article>
+
+			<article class="group">
+				<div class="overflow-hidden">
+					<img
+						src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=700&q=80"
+						alt="Cobblestone street in Europe"
+						class="w-full h-52 object-cover group-hover:scale-[1.04] transition-transform duration-500"
+					/>
+				</div>
+				<div class="mt-5">
+					<div class="flex items-center gap-3 mb-3">
+						<span
+							class="font-mono text-xs text-camel uppercase tracking-wide"
+							>Solo Travel</span
+						>
+						<span class="font-mono text-xs text-stone"
+							>6 min read</span
+						>
+					</div>
+					<h3 class="font-serif text-xl leading-snug">
+						<a
+							href="article.html"
+							class="hover:text-camel transition-colors"
+							>The loneliness nobody talks about —
+							and how I got through it</a
+						>
+					</h3>
+					<p
+						class="mt-3 text-sm text-espresso/60 leading-relaxed"
+					>
+						Not a pep talk. Just honest notes from month
+						three on the road, alone.
+					</p>
+				</div>
+			</article>
+		</div>
+	</section>
+
+	<!-- ── Categories band ── -->
+	<section class="bg-cream border-y border-stone/30">
+		<div
+			class="max-w-6xl mx-auto px-6 md:px-10 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
+		>
+			<a
+				href="journal.html"
+				class="group flex flex-col items-start gap-3 p-5 border border-stone/30 hover:border-camel hover:bg-sand transition-all"
+			>
+				<span class="text-2xl">🗺️</span>
+				<p
+					class="font-mono text-xs tracking-widest text-stone uppercase"
+				>
+					Solo Travel
+				</p>
+				<p
+					class="font-serif text-lg leading-snug group-hover:text-camel transition-colors"
+				>
+					Getting lost, on purpose
+				</p>
+				<p class="text-xs text-espresso/50">24 posts</p>
+			</a>
+
+			<a
+				href="journal.html"
+				class="group flex flex-col items-start gap-3 p-5 border border-stone/30 hover:border-camel hover:bg-sand transition-all"
+			>
+				<span class="text-2xl">💸</span>
+				<p
+					class="font-mono text-xs tracking-widest text-stone uppercase"
+				>
+					Budget Tips
+				</p>
+				<p
+					class="font-serif text-lg leading-snug group-hover:text-camel transition-colors"
+				>
+					Real numbers, no fluff
+				</p>
+				<p class="text-xs text-espresso/50">18 posts</p>
+			</a>
+
+			<a
+				href="journal.html"
+				class="group flex flex-col items-start gap-3 p-5 border border-stone/30 hover:border-camel hover:bg-sand transition-all"
+			>
+				<span class="text-2xl">🧭</span>
+				<p
+					class="font-mono text-xs tracking-widest text-stone uppercase"
+				>
+					Off the Path
+				</p>
+				<p
+					class="font-serif text-lg leading-snug group-hover:text-camel transition-colors"
+				>
+					Places before the crowds
+				</p>
+				<p class="text-xs text-espresso/50">31 posts</p>
+			</a>
+
+			<a
+				href="journal.html"
+				class="group flex flex-col items-start gap-3 p-5 border border-stone/30 hover:border-camel hover:bg-sand transition-all"
+			>
+				<span class="text-2xl">🍜</span>
+				<p
+					class="font-mono text-xs tracking-widest text-stone uppercase"
+				>
+					Food & Culture
+				</p>
+				<p
+					class="font-serif text-lg leading-snug group-hover:text-camel transition-colors"
+				>
+					Eating like a local
+				</p>
+				<p class="text-xs text-espresso/50">22 posts</p>
+			</a>
+		</div>
+	</section>
+
+	<!-- ── About snippet ── -->
+	<section
+		class="max-w-6xl mx-auto px-6 md:px-10 py-16 grid md:grid-cols-2 gap-12 items-center"
+	>
+		<div>
+			<p class="font-mono text-xs text-stone tracking-widest mb-4">
+				THE PERSON BEHIND THE CAMERA
+			</p>
+			<h2 class="font-serif text-3xl md:text-4xl leading-snug">
+				Hi, I'm Memphis. I make travel content that doesn't
+				pretend it's always easy.
+			</h2>
+			<p class="mt-6 text-espresso/65 leading-relaxed">
+				I've been traveling solo since 2021 — mostly on a
+				budget, mostly off the tourist trail, always with a
+				camera. I started earthtomemphis because I was tired of
+				travel content that made everything look effortless and
+				expensive. It's neither.
+			</p>
+			<a
+				href="about.html"
+				class="inline-block mt-8 text-sm font-semibold border-b-2 border-camel pb-1 hover:text-camel transition-colors"
+				>More about me →</a
+			>
+		</div>
+		<div class="relative">
+			<img
+				src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=800&q=80"
+				alt="Traveler looking out over a mountain vista"
+				class="w-full h-96 object-cover object-top"
+			/>
+			<div
+				class="absolute -bottom-4 -left-4 bg-espresso text-cream p-4 max-w-[200px]"
+			>
+				<p class="font-mono text-xs text-stone mb-1">
+					COUNTRIES VISITED
+				</p>
+				<p class="font-serif text-3xl">34</p>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
