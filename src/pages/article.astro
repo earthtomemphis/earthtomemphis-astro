@@ -1,0 +1,272 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+	<!-- Article header -->
+	<section class="max-w-3xl mx-auto px-6 md:px-10 pt-14 pb-8">
+		<a
+			href="journal.html"
+			class="inline-flex items-center gap-2 text-xs font-mono text-stone hover:text-camel transition-colors mb-8"
+		>
+			← Back to journal
+		</a>
+		<div class="flex items-center gap-3 mb-5">
+			<span
+				class="text-xs font-semibold text-sage border border-sage px-2.5 py-1 uppercase tracking-wide"
+				>Food & Culture</span
+			>
+			<span class="font-mono text-xs text-stone"
+				>Jun 14, 2026 · 21 min read</span
+			>
+		</div>
+		<h1 class="font-serif text-3xl md:text-5xl leading-[1.1]">
+			I ate at 40 street food stalls in Vietnam. Here's the honest
+			ranking.
+		</h1>
+		<p class="mt-5 text-lg text-espresso/65 leading-relaxed max-w-2xl">
+			From a plastic-stool pho spot in Hanoi's old quarter to a banh
+			mi cart that costs less than a dollar — a real eater's guide
+			with no affiliate links and no sponsored meals.
+		</p>
+		<p class="font-mono text-xs text-stone mt-6">
+			21.0°N · 105.8°E — HANOI, VIETNAM
+		</p>
+	</section>
+
+	<!-- Cover image -->
+	<section class="max-w-5xl mx-auto px-6 md:px-10 mb-12">
+		<img
+			src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=1200&q=85"
+			alt="Street food stall at night in Vietnam"
+			class="w-full h-112 object-cover"
+		/>
+		<p class="text-xs font-mono text-stone mt-3">
+			Old Quarter night market, Hanoi. 9pm on a Tuesday — busiest it
+			ever gets.
+		</p>
+	</section>
+
+	<!-- Article content + sidebar -->
+	<section
+		class="max-w-6xl mx-auto px-6 md:px-10 pb-16 grid lg:grid-cols-[1fr_280px] gap-16"
+	>
+		<!-- Body -->
+		<article class="prose max-w-2xl">
+			<p class="text-lg">
+				Let me be honest about how this started: I ran out of
+				restaurant money in Hanoi on day three. Not because I
+				overspent — because the first place I walked into
+				charged $14 for a bowl of pho, and I knew that was
+				wrong. So I left, found a plastic stool two streets
+				away, paid 35,000 dong (about $1.40), and ate the best
+				soup I've had in my life.
+			</p>
+
+			<p>
+				That was the beginning of a fairly obsessive three
+				weeks. I ended up eating almost exclusively from street
+				stalls and market counters across Hanoi, Hoi An, and Ho
+				Chi Minh City — 40 spots in total, tracked in a notes
+				app with prices, what I ordered, and a one-sentence
+				verdict.
+			</p>
+
+			<blockquote>
+				The places with handwritten menus and plastic stools
+				almost always beat the ones with laminated photos and
+				English out front. Not always. But almost always.
+			</blockquote>
+
+			<h2>North: Hanoi</h2>
+			<p>
+				Hanoi is a pho city. Not bun bo hue, not banh mi — pho.
+				And the version you get here is noticeably different
+				from what I'd had elsewhere: cleaner broth, lighter
+				spice, a kind of quiet confidence that doesn't need to
+				announce itself. The best bowl I found was at a spot
+				near Hoan Kiem lake that opens at 6am and closes when
+				they run out, usually around 9.
+			</p>
+
+			<p>
+				Budget reality check for Hanoi: you can eat breakfast,
+				lunch, and dinner for under $5 if you're eating from
+				stalls. Comfortably. A banh mi is 15,000–25,000 dong.
+				Pho runs 35,000–50,000. Bun cha — the dish Obama
+				famously ate here — is 40,000–60,000. These aren't the
+				tourist prices; they're the real ones from spots where I
+				was often the only foreigner.
+			</p>
+
+			<h2>Central: Hoi An</h2>
+			<p>
+				Hoi An is beautiful and increasingly crowded, but the
+				food is genuinely its own thing — cao lau, white rose
+				dumplings, and banh mi that's legitimately different
+				from the Saigon version (softer bread, more
+				pork-forward). The tourist trap density is real, but the
+				market on Tran Phu is still mostly locals eating lunch,
+				and the prices reflect that.
+			</p>
+		</article>
+
+		<!-- Sidebar -->
+		<aside class="lg:sticky lg:top-24 lg:self-start space-y-8">
+			<!-- Trip summary card -->
+			<div class="bg-espresso text-cream p-6">
+				<p
+					class="font-mono text-xs text-stone tracking-widest mb-4"
+				>
+					TRIP SNAPSHOT
+				</p>
+				<ul class="space-y-3 text-sm">
+					<li
+						class="flex justify-between border-b border-stone/20 pb-3"
+					>
+						<span class="text-cream/60">Duration</span>
+						<span class="font-medium">21 days</span>
+					</li>
+					<li
+						class="flex justify-between border-b border-stone/20 pb-3"
+					>
+						<span class="text-cream/60">Cities</span>
+						<span class="font-medium"
+							>Hanoi, Hoi An, HCMC</span
+						>
+					</li>
+					<li
+						class="flex justify-between border-b border-stone/20 pb-3"
+					>
+						<span class="text-cream/60"
+							>Food budget/day</span
+						>
+						<span class="font-medium text-camel"
+							>$4–7</span
+						>
+					</li>
+					<li class="flex justify-between">
+						<span class="text-cream/60"
+							>Stalls visited</span
+						>
+						<span class="font-medium">40</span>
+					</li>
+				</ul>
+			</div>
+
+			<!-- YouTube callout -->
+			<div class="border border-stone/40 p-6">
+				<p
+					class="font-mono text-xs text-stone tracking-widest mb-3"
+				>
+					WATCH THE VIDEO
+				</p>
+				<div style="aspect-ratio:16/9" class="w-full mb-4">
+					<iframe
+						class="w-full h-full"
+						src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+						title="Vietnam street food video"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+				<p class="text-sm text-espresso/60 leading-relaxed">
+					The full 24-hour street food challenge is on the
+					channel — with prices and exact locations.
+				</p>
+			</div>
+
+			<!-- Tags -->
+			<div>
+				<p
+					class="font-mono text-xs text-stone tracking-widest mb-3"
+				>
+					TAGS
+				</p>
+				<div class="flex flex-wrap gap-2">
+					<span
+						class="text-xs bg-espresso/8 px-3 py-1.5 font-mono"
+						>#vietnam</span
+					>
+					<span
+						class="text-xs bg-espresso/8 px-3 py-1.5 font-mono"
+						>#food</span
+					>
+					<span
+						class="text-xs bg-espresso/8 px-3 py-1.5 font-mono"
+						>#budget</span
+					>
+					<span
+						class="text-xs bg-espresso/8 px-3 py-1.5 font-mono"
+						>#streetfood</span
+					>
+					<span
+						class="text-xs bg-espresso/8 px-3 py-1.5 font-mono"
+						>#southeast-asia</span
+					>
+				</div>
+			</div>
+		</aside>
+	</section>
+
+	<!-- More posts -->
+	<section class="bg-cream border-t border-stone/30">
+		<div class="max-w-6xl mx-auto px-6 md:px-10 py-16">
+			<h2 class="font-serif text-2xl mb-10">Keep reading</h2>
+			<div class="grid sm:grid-cols-3 gap-8">
+				<a href="article.html" class="group">
+					<img
+						src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=600&q=80"
+						alt="Beach"
+						class="w-full h-44 object-cover group-hover:opacity-90 transition-opacity"
+					/>
+					<p
+						class="font-mono text-xs text-camel uppercase tracking-wide mt-4 mb-2"
+					>
+						Budget Tips
+					</p>
+					<h3
+						class="font-serif text-lg leading-snug group-hover:text-camel transition-colors"
+					>
+						How I travel full-time for under $1,200 a
+						month
+					</h3>
+				</a>
+				<a href="article.html" class="group">
+					<img
+						src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600&q=80"
+						alt="Temple"
+						class="w-full h-44 object-cover group-hover:opacity-90 transition-opacity"
+					/>
+					<p
+						class="font-mono text-xs text-sage uppercase tracking-wide mt-4 mb-2"
+					>
+						Off the Path
+					</p>
+					<h3
+						class="font-serif text-lg leading-snug group-hover:text-camel transition-colors"
+					>
+						Hampi before the crowds: what I saw at 5am
+					</h3>
+				</a>
+				<a href="article.html" class="group">
+					<img
+						src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=600&q=80"
+						alt="Street"
+						class="w-full h-44 object-cover group-hover:opacity-90 transition-opacity"
+					/>
+					<p
+						class="font-mono text-xs text-camel uppercase tracking-wide mt-4 mb-2"
+					>
+						Solo Travel
+					</p>
+					<h3
+						class="font-serif text-lg leading-snug group-hover:text-camel transition-colors"
+					>
+						The loneliness nobody talks about
+					</h3>
+				</a>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
